@@ -25,13 +25,11 @@ export default Component.extend({
   }),
 
   actions: {
+
     toggleMenu() {
       this.toggleProperty('isMenuOpened');
-    },
-
-    modifyLanguage(languageCode){
-      this.get('i18n').set('locale', languageCode);
     }
+
   }
 
 });
