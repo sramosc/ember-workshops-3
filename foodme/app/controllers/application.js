@@ -9,8 +9,11 @@ export default Controller.extend({
   appName: 'FoodMe',
 
   menuLinks: [{
-    name: 'Restaurantes',
+    label: 'restaurants',
     url: 'restaurants'
+  }, {
+    label: 'about',
+    url: 'about'
   }]
 
 });
