@@ -1,7 +1,7 @@
 import { helper } from '@ember/component/helper';
 
 export function restaurantImg(params/*, hash*/) {
-  return params;
+  return `img/restaurants/${params}.jpg`;
 }
 
 export default helper(restaurantImg);
