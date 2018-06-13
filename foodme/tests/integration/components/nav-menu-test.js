@@ -12,7 +12,7 @@ module('Integration | Component | nav-menu', function(hooks) {
 
     await render(hbs`{{nav-menu}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.ok(this.$('.navbar'));
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | nav-menu', function(hooks) {
       {{/nav-menu}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(this.$('.navbar'));
   });
 });

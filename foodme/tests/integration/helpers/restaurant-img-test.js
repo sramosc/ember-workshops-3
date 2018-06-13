@@ -12,6 +12,6 @@ module('Integration | Helper | restaurant-img', function(hooks) {
 
     await render(hbs`{{restaurant-img inputValue}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), 'img/restaurants/1234.jpg');
   });
 });
