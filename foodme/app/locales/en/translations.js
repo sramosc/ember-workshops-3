@@ -45,6 +45,8 @@ export default {
 
   "searchByName": "Search by name...",
 
+  "viewInGoogleMaps": "View in Google Maps...",
+
   "weekDays": {
     "sunday": "sunday",
     "monday": "monday",
