@@ -64,6 +64,13 @@ export default Controller.extend({
         return filteredRestaurants;
     }),
 
-    filterName: null
+    filterName: null,
+
+    actions: {
+      clearFilters() {
+        this.get('filterCuisins').clear();
+        this.set('filterName', null);
+      }
+    }
 
 });
