@@ -43,6 +43,8 @@ export default {
 
   "selectCuisins": "Selecciona tipo de cocina...",
 
+  "searchByName": "Buscar por nombre...",
+
   "weekDays": {
     "sunday": "domingo",
     "monday": "lunes",

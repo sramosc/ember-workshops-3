@@ -43,6 +43,8 @@ export default {
 
   "selectCuisins": "Select some cuisines...",
 
+  "searchByName": "Search by name...",
+
   "weekDays": {
     "sunday": "sunday",
     "monday": "monday",
