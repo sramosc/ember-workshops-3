@@ -24,7 +24,7 @@
 
       <div class="panel-body">
         <label>{{t 'name'}}</label><br>
-        {{input type='text' value=filterName placeholder=(t 'searchByName')}}
+        {{input class="filterName" type='text' value=filterName placeholder=(t 'searchByName')}}
       </div>
 
       <div class="panel-footer">
@@ -39,9 +39,9 @@
         <h3 class="panel-title">{{t 'foundRestaurants' count=filteredRestaurants.length}}</h3>
       </div>
 
-      <div class="panel-body">
+      <div class="panel-body restaurant-list">
         {{#each filteredRestaurants as |restaurant|}}
-          <div class="media">
+          <div class="media restaurant-item">
             <a class="media-left">
               <img class="media-object" src={{restaurant-img restaurant.id}} width="64" height="64">
             </a>
