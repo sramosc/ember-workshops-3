@@ -1,6 +1,9 @@
 <div class="row-fluid">
    <div class="page-header">
-      <h1>{{model.name}}</h1>
+      <h1>
+        {{model.name}}
+        <button class="btn btn-link" {{action 'openGoogleMaps' model.name}}>{{t 'viewInGoogleMaps'}}</button>
+      </h1>
    </div>
 
    <div class="col-md-3">
