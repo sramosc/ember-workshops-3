@@ -40,10 +40,10 @@ export default Controller.extend({
     filterCuisins: A(),
 
     // Filter function
-    filteredRestaurants: computed('model', 'filterCuisins', function() {
+    filteredRestaurants: computed('model', 'filterCuisins', 'filterName', function() {
         let filteredRestaurants = this.get('model');
-
         const filterCuisins = this.get('filterCuisins');
+        let filterName = this.get('filterName');
 
         // Filter by cuisine
         if (isPresent(filterCuisins)) {
@@ -52,7 +52,18 @@ export default Controller.extend({
             );
         }
 
+        // Filter by name
+        if (isPresent(filterName)) {
+          filterName = filterName.toLowerCase();
+
+          return filteredRestaurants.filter((restaurant) =>
+            restaurant.name.toLowerCase().includes(filterName)
+          );
+        }
+
         return filteredRestaurants;
-    })
+    }),
+
+    filterName: null
 
 });
