@@ -49,6 +49,7 @@
                 {{restaurant.name}} <span class="label label-info">{{restaurant.cuisine}}</span>
               </h4>
               {{restaurant.description}}
+              {{star-rating item=restaurant rating=restaurant.rating}}
             </div>
           </div>
         {{/each}}
