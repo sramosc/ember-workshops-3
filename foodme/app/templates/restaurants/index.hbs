@@ -39,14 +39,15 @@
       </div>
 
       <div class="panel-body">
-        {{#each filteredRestaurants as |restaurant| }}
+        {{#each filteredRestaurants as |restaurant|}}
           <div class="media">
             <a class="media-left">
               <img class="media-object" src={{restaurant-img restaurant.id}} width="64" height="64">
             </a>
             <div class="media-body">
               <h4 class="media-heading">
-                {{restaurant.name}} <span class="label label-info">{{restaurant.cuisine}}</span>
+                {{link-to restaurant.name 'restaurants.detail' restaurant}}
+                <span class="label label-info">{{capitalize restaurant.cuisine}}</span>
               </h4>
               {{restaurant.description}}
               {{star-rating item=restaurant rating=restaurant.rating}}
