@@ -49,6 +49,7 @@
               <h4 class="media-heading">
                 {{link-to restaurant.name 'restaurants.detail' restaurant}}
                 <span class="label label-info">{{capitalize restaurant.cuisine}}</span>
+                <button class="btn btn-link" {{action 'openGoogleMaps' restaurant.name}}>{{t 'viewInGoogleMaps'}}</button>
               </h4>
               {{restaurant.description}}
               {{star-rating item=restaurant rating=restaurant.rating}}
