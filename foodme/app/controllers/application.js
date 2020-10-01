@@ -1,14 +1,14 @@
 import Controller from '@ember/controller';
-
+                                         
 export default Controller.extend({
 
     appName: 'FoodMe',
     menuLinks: [{
-        name: 'Restaurantes',
+        label: 'restaurants',
         url: 'restaurants'
     },
     {
-        name: 'Nosotros',
+        label: 'about',
         url: 'about'
     }]
 });
